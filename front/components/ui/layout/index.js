@@ -11,7 +11,7 @@ function Layout({ children }) {
         <div className={classes.header__content}>
           <Link href="/">
             <a className={classes.header__author}>
-              <span>BUQUET</span> Valérian
+              <span className={classes.header__lastname}>BUQUET</span> Valérian
             </a>
           </Link>
           <a href="#" className={classes.header__contact}>

@@ -3,6 +3,7 @@
 .skills {
   width: $width-content;
   margin: 0 auto;
+  color: $color-secondary;
   @include borderBox($color-secondary);
 
   &__title {
@@ -23,6 +24,7 @@
     padding: 3rem;
     margin: 3rem;
     text-transform: uppercase;
+    font-size: 1.2rem;
     font-weight: 400;
 
     @include borderBox($color-secondary);
@@ -41,5 +43,6 @@
 .skill {
   &__title {
     margin-top: 1rem;
+    color: $color-white;
   }
 }

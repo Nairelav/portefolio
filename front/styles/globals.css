@@ -6,7 +6,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  background-color: #101010; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -64,7 +65,7 @@ body {
   font-weight: 400; }
 
 h1 {
-  color: #504d4d;
+  color: #BBBBBB;
   margin: 0;
   font-weight: 400;
   font-size: 10.3rem;
@@ -72,7 +73,7 @@ h1 {
   position: relative; }
 
 h2 {
-  color: #504d4d;
+  color: #BBBBBB;
   font-weight: 400;
   margin-top: 0;
   position: relative;
@@ -81,7 +82,7 @@ h2 {
   line-height: 6.7rem; }
 
 h3 {
-  color: #504d4d;
+  color: #BBBBBB;
   font-weight: 400;
   margin-top: 0;
   position: relative;
@@ -90,7 +91,7 @@ h3 {
   line-height: 4.7rem; }
 
 h4 {
-  color: #504d4d;
+  color: #BBBBBB;
   font-weight: 400;
   margin-top: 0;
   position: relative;
@@ -99,7 +100,7 @@ h4 {
   line-height: 2.7rem; }
 
 h5 {
-  color: #504d4d;
+  color: #BBBBBB;
   font-weight: 400;
   margin-top: 0;
   position: relative;
@@ -108,7 +109,7 @@ h5 {
   line-height: 1.7rem; }
 
 h6 {
-  color: #504d4d;
+  color: #BBBBBB;
   font-weight: 400;
   margin-top: 0;
   position: relative;
