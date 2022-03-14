@@ -1,0 +1,27 @@
+@import "../../../abstracts/import";
+
+.experience {
+  padding: 3rem;
+  text-align: left;
+  @include borderBox($color-secondary);
+  margin: 2rem 0;
+
+  &:last-child {
+    margin: 0 auto;
+    grid-area: 3 / 1 / 4 / -1;
+  }
+
+  &__date {
+    margin-bottom: 0;
+    color: $color-secondary;
+    font-size: 1.2rem;
+  }
+
+  &__title {
+    margin: 1rem 0;
+  }
+
+  &__text {
+    font-size: 1.7rem;
+  }
+}

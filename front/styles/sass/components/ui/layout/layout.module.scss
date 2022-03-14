@@ -1,0 +1,133 @@
+@import "../../../abstracts/import";
+
+.header {
+  font-size: 1.2rem;
+  color: $color-text;
+  z-index: 9000;
+  display: block;
+  width: $width-content;
+  margin: 1rem auto;
+  text-transform: uppercase;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__author {
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    color: $color-text;
+
+    &__label {
+      margin-right: 1rem;
+      text-decoration: none;
+    }
+
+    &__icon {
+      height: 2rem;
+    }
+  }
+}
+
+.main {
+  // padding: 1rem 5rem;
+  display: grid;
+  // grid-template-rows: 20vh 80vh;
+  grid-template-columns: [sidebar-start] minmax(13rem, 16rem) [sidebar-end main-start] minmax(6rem, 1fr) [main-end] minmax(13rem, 16rem) [full-end];
+  display: block;
+  width: $width-content;
+  margin: 0 auto;
+
+  &__content {
+    grid-column: main-start / main-end;
+    background-color: $color-background;
+    padding: 0 2rem 2rem 2rem;
+  }
+}
+
+.footer {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: $color-text;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+
+  width: 100vw;
+  height: 7rem;
+  padding: 0 4rem;
+
+  z-index: 9000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  &__sidebar {
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+
+    &_label {
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    &_mail {
+      &:link,
+      &:visited {
+        color: $color-text;
+      }
+
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+  }
+
+  &__social {
+    margin-bottom: 15rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_item:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    &_label {
+      margin-bottom: 10rem !important;
+      rotate: 90deg;
+
+      text-transform: uppercase;
+
+      &::after {
+        background-color: black;
+        content: "";
+        position: absolute;
+        top: 40%;
+        left: 120%;
+        width: 5rem;
+        height: 2px;
+      }
+    }
+
+    &_item {
+      &_icon {
+        color: $color-text;
+        height: 2rem;
+      }
+    }
+  }
+}

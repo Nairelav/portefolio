@@ -1,0 +1,17 @@
+@import "../../abstracts/import";
+
+.services {
+  width: $width-content;
+  margin: 0 auto;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__title {
+    grid-area: 1 / 1 / 2 / -1;
+  }
+}

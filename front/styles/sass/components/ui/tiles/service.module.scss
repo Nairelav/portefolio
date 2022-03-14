@@ -1,0 +1,27 @@
+@import "../../../abstracts/import";
+
+.service {
+  padding: 2rem;
+  text-align: center;
+
+  &:last-child {
+    margin: 0 auto;
+    grid-area: 3 / 1 / 4 / -1;
+  }
+
+  &__icon {
+    fill: $color-primary;
+    height: 4.5rem;
+    width: 4.5rem;
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem);
+  }
+
+  &__title {
+    margin: 1rem 0;
+  }
+
+  &__text {
+    font-size: 1.7rem;
+  }
+}

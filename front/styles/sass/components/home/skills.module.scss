@@ -1,0 +1,45 @@
+@import "../../abstracts/import";
+
+.skills {
+  width: $width-content;
+  margin: 0 auto;
+  @include borderBox($color-secondary);
+
+  &__title {
+    width: fit-content;
+    margin: 3rem auto 0 auto;
+    align-self: center;
+  }
+
+  &__items {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  &__item {
+    padding: 3rem;
+    margin: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    @include borderBox($color-secondary);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &:last-child {
+      grid-area: 3 / 2 / -1 / 3;
+    }
+  }
+}
+
+.skill {
+  &__title {
+    margin-top: 1rem;
+  }
+}
