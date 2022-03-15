@@ -3,7 +3,7 @@ import logoClasses from "@styles/ui/logo.module.scss";
 
 function LogoPage() {
   return (
-    <section className={`reveal ${classes.home} full-section u-next-section`}>
+    <section className={`reveal active ${classes.home} full-section u-next-section`}>
       <div className={logoClasses.logo}>
         <div className={logoClasses.logo__content}>
           <span className={logoClasses.logo__item}></span>
