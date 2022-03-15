@@ -5,6 +5,11 @@ import Link from "next/link";
 import { GithubIcon, LinkedinIcon, EnvelopIcon } from "../svg/index";
 
 function Layout({ children }) {
+  function goTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+
   return (
     <>
       <header className={classes.header}>
@@ -14,7 +19,7 @@ function Layout({ children }) {
               <span className={classes.header__lastname}>BUQUET</span> Valérian
             </a>
           </Link>
-          <a href="#" className={classes.header__contact}>
+          <a href="mailto:valerian.buquet@gmail.com" className={classes.header__contact}>
             <div className={classes.header__contact__label}>Contact moi</div>
             <div className={classes.header__contact__icon}>
               <EnvelopIcon />
@@ -30,7 +35,9 @@ function Layout({ children }) {
       <footer className={classes.footer}>
         <div className={classes.footer__sidebar}>
           <div className={`${classes.footer__sidebar_item}`}>
-            <UpIcon />
+            <btn className={classes.btnToTop} onClick={goTop}>
+              <UpIcon />
+            </btn>
           </div>
         </div>
 

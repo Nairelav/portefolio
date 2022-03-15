@@ -11,8 +11,8 @@ function index() {
         <Image className={classes.home__logo} src="/images/logo.png" width={600} height={450} />
         <div className={classes.about__info}>
           <p className={classes.about__paragraphe}>
-            Je suis passionné par la conception de sites Web. Autodidacte durant mes heures perdu me permet d'être polyvalent et adaptable aux tâches qui me
-            sont confiées. Mon objectif est d'améliorer le Web en concevant de superbes expériences.
+            Je suis passionné par la conception de sites Web. Autodidacte durant mes heures perdues me permet d'être polyvalent et adaptable aux tâches qui me
+            sont confiées. Mon objectif est d'améliorer le Web en concevant de superbes expériences..
           </p>
           <div className={classes.about__desc}>
             <div>

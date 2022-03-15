@@ -78,28 +78,11 @@
   left: 0;
 
   &__sidebar {
-    margin-bottom: 10rem;
-    display: flex;
-    flex-direction: column;
+
+    margin-bottom: 1rem;
 
     &_item {
       color: $color-secondary;
-    }
-
-    &_label {
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-    }
-
-    &_mail {
-      &:link,
-      &:visited {
-        color: $color-text;
-      }
-
-      &:hover {
-        color: $color-secondary;
-      }
     }
   }
 
@@ -138,4 +121,8 @@
       }
     }
   }
+}
+
+.btnToTop {
+  cursor: pointer;
 }

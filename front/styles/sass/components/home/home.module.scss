@@ -1,16 +1,11 @@
 @import "../../abstracts/import";
 
 .home {
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding-top: 3rem;
-
-  &__logo {
-    // background-color: orange;
-  }
 
   &__author {
     color: $color-secondary;
@@ -20,7 +15,6 @@
     align-self: start;
     word-wrap: break-word;
     transition: all 2s;
-    bottom: .5rem;
-    max-width: 70%;
+    bottom: 0.5rem;
   }
 }

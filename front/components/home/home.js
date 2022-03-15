@@ -1,12 +1,22 @@
 import classes from "@styles/home/home.module.scss";
-import Image from "next/image";
+import logoClasses from "@styles/ui/logo.module.scss";
 
 function LogoPage() {
   return (
     <section className={`${classes.home} full-section u-next-section`}>
-      <Image className={classes.home__logo} src="/images/logo.png" width={800} height={650} />
+      <div className={logoClasses.logo}>
+        <div className={logoClasses.logo__content}>
+          <span className={logoClasses.logo__item}></span>
+          <p>
+            <span>BUQUET</span> Valérian
+          </p>
+        </div>
+      </div>
+
       <div className={classes.home__text}>
-        <h3>Bonjour, je suis <span className={classes.home__author}>Valérian BUQUET</span>, Développeur Full-stack et UX/UI Designer.</h3>
+        <h3>
+          Bonjour, je suis <span className={classes.home__author}>BUQUET Valérian</span>, développeur Full-stack et UX/UI Designer.
+        </h3>
       </div>
     </section>
   );
