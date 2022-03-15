@@ -3,7 +3,7 @@ import { CssIcon, HtmlIcon, JavascriptIcon, NodeJsIcon, PhpIcon, ReactJsIcon, Vu
 
 const SkillsPage = () => {
   return (
-    <section className={`u-next-section ${classes.skills}`}>
+    <section className={`reveal u-next-section ${classes.skills}`}>
       <h4 className={classes.skills__title}>Compétences</h4>
       <div className={classes.skills__items}>
         <div className={classes.skills__item}>

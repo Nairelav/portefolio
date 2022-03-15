@@ -29,33 +29,15 @@ body {
   background-color: #ebebeb;
   color: #fff; }
 
-@-webkit-keyframes rubberBand {
-  0% {
-    transform: scale3d(1, 1, 1); }
-  35% {
-    transform: scale3d(1.25, 0.75, 1); }
-  45% {
-    transform: scale3d(0.75, 1, 1); }
-  65% {
-    transform: scale3d(1.2, 0.8, 1); }
-  75% {
-    transform: scale3d(1.05, 0.95, 1); }
-  100% {
-    transform: scale3d(1, 1, 1); } }
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease; }
 
-@keyframes rubberBand {
-  0% {
-    transform: scale3d(1, 1, 1); }
-  35% {
-    transform: scale3d(1.25, 0.75, 1); }
-  45% {
-    transform: scale3d(0.75, 1, 1); }
-  65% {
-    transform: scale3d(1.2, 0.8, 1); }
-  75% {
-    transform: scale3d(1.05, 0.95, 1); }
-  100% {
-    transform: scale3d(1, 1, 1); } }
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1; }
 
 @font-face {
   font-family: Radikal;

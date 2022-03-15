@@ -1,17 +1,24 @@
 import classes from "@styles/ui/layout/layout.module.scss";
 import { UpIcon } from "../svg/index";
 import Link from "next/link";
+import Head from "next/head";
 
 import { GithubIcon, LinkedinIcon, EnvelopIcon } from "../svg/index";
 
-function Layout({ children }) {
+function Layout({ title, children }) {
+
   function goTop() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 
+  const titleDisplay = title ? title : "PorteFolio - BUQUET Valérian";
+
   return (
     <>
+      <Head>
+        <title>{titleDisplay}</title>
+      </Head>
       <header className={classes.header}>
         <div className={classes.header__content}>
           <Link href="/">

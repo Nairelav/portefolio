@@ -21,7 +21,7 @@ const service = () => {
   ];
 
   return (
-    <section className={`u-next-section ${classes.services}`}>
+    <section className={`reveal u-next-section ${classes.services}`}>
       <div className={classes.services__content}>
         <div className={classes.services__title}>
           <h4>Services</h4>

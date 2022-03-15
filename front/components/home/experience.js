@@ -53,7 +53,7 @@ function ExperiencePage() {
 
 
   return (
-    <section className={`u-next-section ${classes.experiences}`}>
+    <section className={`reveal u-next-section ${classes.experiences}`}>
       <div className={classes.experiences__content}>
         <div>
           <h4 className={classes.experiences__column}>Expériences</h4>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function index() {
   return (
-    <section className={`u-next-section ${classes.about}`}>
+    <section className={`reveal u-next-section ${classes.about}`}>
       <div className={classes.about__title}>
         <h3 className={classes.about__title_inner}>A propos de moi et de moi-même </h3>
       </div>
